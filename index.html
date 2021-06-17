@@ -8,25 +8,26 @@
  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHwrr7tOQtdIaMS5xUstHXrBZrxEgryJXBaA&usqp=CAU" alt="amogus" width="200" height="80">
    <body bgcolor="#FF0000">
 
+  <h1>Whack-a-mole! <span class="score">0</span></h1>
 
-    
-     function getHighScore(){
-  //get the high score on this machine using localStorage
-  highScore = parseInt(localStorage.getItem("moleHighScore"));
-  console.log("highScore: ", highScore);
-  if (highScore == "null"
-   || highScore == null
-   || isNaN(highScore)){
-   highScore = 0;
-  } // end if
- } // end getHighScore
-     function saveHighScore(){
-  if (hits > highScore){
-   alert("New high score!");
-   localStorage.setItem("moleHighScore", hits);
-  } // end if
- } // end saveHighScore
-
-    
-    
-    
+    <div class="game">
+        <div class="hole hole1">
+        <div class="mole"></div>
+        </div>
+        <div class="hole hole2">
+        <div class="mole"></div>
+        </div>
+        <div class="hole hole3">
+        <div class="mole"></div>
+        </div>
+        <div class="hole hole4">
+        <div class="mole"></div>
+        </div>
+        <div class="hole hole5">
+        <div class="mole"></div>
+        </div>
+        <div class="hole hole6">
+        <div class="mole"></div>
+        </div>
+    </div>
+    <button class="play">Play</button>
